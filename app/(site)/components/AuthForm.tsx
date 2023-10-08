@@ -89,7 +89,7 @@ const AuthForm = () => {
     }
   };
 
-  const socialAction = (action: string) => {
+  const socialAction = (action: string): void => {
     setIsLoading(true);
 
     signIn(action, { redirect: false })
